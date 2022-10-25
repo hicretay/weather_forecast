@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		200CDB472907FA3800D99181 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200CDB462907FA3800D99181 /* LocationManager.swift */; };
+		200CDB4A2907FC4500D99181 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200CDB492907FC4500D99181 /* WelcomeView.swift */; };
 		207A5D2328FFF8AC00EE4BDB /* WeatherForecastApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207A5D2228FFF8AC00EE4BDB /* WeatherForecastApp.swift */; };
 		207A5D2528FFF8AC00EE4BDB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207A5D2428FFF8AC00EE4BDB /* ContentView.swift */; };
 		207A5D2728FFF8AD00EE4BDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 207A5D2628FFF8AD00EE4BDB /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		200CDB462907FA3800D99181 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		200CDB492907FC4500D99181 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		207A5D1F28FFF8AC00EE4BDB /* WeatherForecast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherForecast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		207A5D2228FFF8AC00EE4BDB /* WeatherForecastApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecastApp.swift; sourceTree = "<group>"; };
 		207A5D2428FFF8AC00EE4BDB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		200CDB452907FA1100D99181 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				200CDB462907FA3800D99181 /* LocationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		200CDB482907FBC600D99181 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				207A5D2428FFF8AC00EE4BDB /* ContentView.swift */,
+				200CDB492907FC4500D99181 /* WelcomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		207A5D1628FFF8AC00EE4BDB = {
 			isa = PBXGroup;
 			children = (
@@ -98,8 +119,9 @@
 		207A5D2128FFF8AC00EE4BDB /* WeatherForecast */ = {
 			isa = PBXGroup;
 			children = (
+				200CDB482907FBC600D99181 /* Views */,
+				200CDB452907FA1100D99181 /* Managers */,
 				207A5D2228FFF8AC00EE4BDB /* WeatherForecastApp.swift */,
-				207A5D2428FFF8AC00EE4BDB /* ContentView.swift */,
 				207A5D2628FFF8AD00EE4BDB /* Assets.xcassets */,
 				207A5D2B28FFF8AD00EE4BDB /* Persistence.swift */,
 				207A5D2D28FFF8AD00EE4BDB /* WeatherForecast.xcdatamodeld */,
@@ -264,7 +286,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				207A5D2C28FFF8AD00EE4BDB /* Persistence.swift in Sources */,
+				200CDB4A2907FC4500D99181 /* WelcomeView.swift in Sources */,
 				207A5D2528FFF8AC00EE4BDB /* ContentView.swift in Sources */,
+				200CDB472907FA3800D99181 /* LocationManager.swift in Sources */,
 				207A5D2328FFF8AC00EE4BDB /* WeatherForecastApp.swift in Sources */,
 				207A5D2F28FFF8AD00EE4BDB /* WeatherForecast.xcdatamodeld in Sources */,
 			);
@@ -428,6 +452,8 @@
 				DEVELOPMENT_TEAM = TH3R22Z883;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app requires your location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app requires your location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -457,6 +483,8 @@
 				DEVELOPMENT_TEAM = TH3R22Z883;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app requires your location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app requires your location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
